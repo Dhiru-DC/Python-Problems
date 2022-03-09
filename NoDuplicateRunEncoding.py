@@ -11,8 +11,10 @@ for i in Sample_list:
     else:
         if count != 1:
             Temp_list.append(count)
-        Temp_list.append(temp)
-        New_list.append(Temp_list[:])
+            Temp_list.append(temp)
+            New_list.append(Temp_list[:])
+        else:
+            New_list.append(temp)
         Temp_list.clear()
         temp = i
         count = 1
