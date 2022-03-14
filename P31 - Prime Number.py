@@ -13,7 +13,9 @@ class invalidinputError(Error):
 
 def isPrime(num):
     try:
-        if (num % 2 == 0):
+        if num==2:
+            return 1
+        elif num % 2 == 0:
             return 0
         else:
             root = m.ceil(m.sqrt(num))
